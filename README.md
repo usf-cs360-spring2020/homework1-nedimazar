@@ -2,7 +2,7 @@
 
 <https://usf-cs360-spring2020.github.io/template-bulma/>
 
-![Profile Image](profile.jpeg)
+![Profile Image](profile.jpeg&s=300)
 
 **Name:** Ned Azar  
 **Email:** nazar@dons.usfca.edu
