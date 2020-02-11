@@ -2,8 +2,7 @@
 
 <https://usf-cs360-spring2020.github.io/template-bulma/>
 
-![Profile Image](profile.jpeg&s=300)
-<img src="profile.jpeg" alt="alt text" width="200" >
+<img src="profile.jpeg" alt="Photo is unavailable :/" width="200" >
 
 **Name:** Ned Azar  
 **Email:** nazar@dons.usfca.edu
