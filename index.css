@@ -1,11 +1,13 @@
 svg {
-  background: #ffa600;
+
+
+  background: white;
 }
 
 rect {
-  fill: grey;
+  fill: #33659B;
 
-  stroke:black;
+  stroke:white;
   stroke-width:1;
   /*fill-opacity:0.1;*/
   stroke-opacity:0.9;

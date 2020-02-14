@@ -1,17 +1,16 @@
 //Source: https://bl.ocks.org/Golodhros/6f8e6d1792416ee3770ff4ddd5c9594e
 
 
-console.log("AHSDHRHEFVHH");
+console.log("BAR");
 
 
-var svg = d3.select("#wow"),
+var svg = d3.select("#barChart"),
   margin = {
     top: 20,
     right: 10,
     bottom: 60,
     left: 40
   };
-  console.log(svg);
 
 // },
 // width = +svg.attr("width") - margin.left - margin.right,
@@ -30,10 +29,10 @@ var g = svg.append("g")
 
 
 svg.append("text").attr("id", "charttitle")
-  .attr("x", width / 3.9)
+  .attr("x", 355)
   .attr("y", 25)
   .style("text-anchor", "middle")
-  .text("Number of people flying out of sfo");
+  .text("Number of emplaned passengers each month for various airlines 2005 - 2019 at SFO");
 
 d3.csv("barChartData.csv")
   .then((data) => {

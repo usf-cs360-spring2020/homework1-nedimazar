@@ -50,9 +50,9 @@
     <div class="hero-body">
       <div class="container">
         <!-- TODO: Change title -->
-        <h1 class="title">Homework 1</h1>
+        <h1 class="title">Data Visualization</h1>
         <!-- TODO: Change subtitle -->
-        <h2 class="subtitle">Data Visualizations Ned Azar</h2>
+        <h2 class="subtitle">CS 360/560 • Spring 2020 • Nedim Azar</h2>
       </div>
     </div>
   </section>
@@ -114,7 +114,7 @@
       <div  class="content">
         <h1 class="title">
           <!-- TODO: Change page title -->
-          Homework 1 CS 360: Data Visualization
+          Homework #1
         </h1>
         <p class="subtitle">
           <!-- TODO: Change page subtitle -->
@@ -122,43 +122,50 @@
         </p>
 
 
-        <p>These are the data visualizations that I did in Tableau then implemented into D3.js</p>
+        <p>Welcome to my Homework #1, you will find my prototypesat the very bottom of the page!</p>
 
         <h2 id="data">Data</h2>
 
-        <p>My data was provided by <a href="https://data.sfgov.org/Transportation/Air-Traffic-Landings-Statistics/fpux-q53t">Data SF</a> </p>
-<!--
-        <blockquote>
-          <p>
-            "This data is made available under the Public Domain Dedication and License v1.0 whose full text can be found at: <a href="http://www.opendatacommons.org/licenses/pddl/1.0/">www.opendatacommons.org/licenses/pddl/1.0/</a>"
-          </p>
-          <cite>Put a citation here, possibly link to the dataset license information directly.</cite>
-        </blockquote> -->
+        <p>Data provided by <a href="https://data.sfgov.org/Transportation/Air-Traffic-Landings-Statistics/fpux-q53t">Data SF</a> </p>
 
-        <p>San Francisco International Airport data on Landings Statistics (DATASF). <br /> I used a three column data set</p>
+
+        <p>The original dataset contains 12 columns and over 21k rows. I used the filtering on the source website to make it much more compact.</p>
+        <p>The columns I've mainly used:</p>
 
         <ol>
-          <li><strong>Month</strong> This column gives me the month that the flight occured</li>
+          <li><strong>Activity period:</strong> I used this column to calculate the month that each row describes.</li>
 
-          <li><strong>Domestic</strong> This column give me the sum of all the passenger counts on Domestic flights</li>
+          <li><strong>Number of passengers:</strong> This describes the amount of passengers flying in or out of SFO for a given activity period.</li>
 
-          <li><strong>International</strong> This column give me the sum of all the passenger counts on International flights</li>
+          <li><strong>Boarding area:</strong> This column is a text field specifying the boarding area that a flight used.</li>
         </ol>
 
         <h3 id="wrangling">Wrangling</h3>
 
-        <p>I really only cared about the passenger count, the month the flight occured, and whether it was domestic or international.</p>
+        <p>I did minor wrangling such as summing up the passenger counts by boarding area and separately by activity period.</p>
+        <p>I used the source website as well as Tableau and Excel for wrangling the data.</p>
+
 
 
         <h2 id="visualizations">Visualizations</h2>
 
-        <p>Ideally not everything would be on a single page like this example. Instead, you might want to put each section in its own webpage. You would need to carefully replicate the page template (with the header, navbar, and footer) and make the necessary updates. For example, you want the "About" navbar item to be considered active on an "About" web page.</p>
+        <!-- <p>Ideally not everything would be on a single page like this example. Instead, you might want to put each section in its own webpage. You would need to carefully replicate the page template (with the header, navbar, and footer) and make the necessary updates. For example, you want the "About" navbar item to be considered active on an "About" web page.</p> -->
 
-        <p>For now this is just a demo. The buttons below do not go anywhere, but can be easily changed to link to different visualization pages.</p>
+        <!-- <p>For now this is just a demo. The buttons below do not go anywhere, but can be easily changed to link to different visualization pages.</p> -->
 
-        <!-- <svg width="960" height="500"class="bar-chart"></svg> -->
-        <svg id="wow" width="960", height="500"/>
-        <script src="drawBarchart.js"></script>
+
+        <h2 id="chart1">1. Bar Chart</h2>
+        <p>Here the length of each bar corresponds to the number of emplaned passenger. I used one bar for each month. The text for the months is quite small but having many rows is useful for seeing the pattern in this one.</p>
+        <p>One conclusion we can make looking at this visualization is that overall the amount of flights have increased over the years, however if we zoom in on years separately we can see a pattern emerge where there are more flights in the summer.</p>
+        <svg id="barChart", width="960", height="500"/>
+        <script src="drawBarChart.js"></script>
+        <p>Data source: <a href="https://data.sfgov.org/Transportation/Air-Traffic-Landings-Statistics/fpux-q53t">Data SF</a>, Author: Nedim Azar</p>
+
+        <h2 id="chart2">2. Pie Chart</h2>
+        <svg id="pieChart", width="960", height="500"/>
+        <script src="drawPieChart.js"></script>
+        <p>Data source: <a href="https://data.sfgov.org/Transportation/Air-Traffic-Landings-Statistics/fpux-q53t">Data SF</a>, Author: Nedim Azar</p>
+
 
 
         <h4>Discussion</h4>
@@ -175,8 +182,11 @@
           <em>Thanks to Sophie Engle for their suggestion to do something with the visualization.</em>
         </p>
 
+      <h2 id="expectedGrade"> Expected grade </h2>
+      <p>I am expecting to get an <strong>A</strong> in this assignment since I've created 2 visualizations using D3 v5 and have done all the necessary writeups.</p>
 
-        <h2 id="about">About</h2>
+
+        <h2 id="about">About  </h2>
 
         <!-- Profile box -->
         <!-- https://bulma.io/documentation/layout/media-object/ -->
@@ -198,7 +208,7 @@
 
               <!-- TODO: Replace with brief biography -->
               <p>
-                Hey guys, I'm Ned. I like to play the guitar and coding at a low level.
+                Hey guys, I'm Ned. I like playing the guitar and coding at a low level.
               </p>
 
               <!-- TODO: Replace or remove tags -->
