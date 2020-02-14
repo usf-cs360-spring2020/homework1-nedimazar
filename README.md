@@ -1,6 +1,6 @@
 # README
 
-<https://usf-cs360-spring2020.github.io/template-bulma/>
+<https://usf-cs360-spring2020.github.io/homework1-nedimazar/>
 
 <img src="profile.jpeg" alt="Photo is unavailable :/" width="200" >
 
